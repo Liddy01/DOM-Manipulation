@@ -25,24 +25,66 @@
 
 
 // Styling Elements
+// const heading = document.querySelector('#main-heading');
+
+// heading.style.color = 'red';
+// console.log(heading);
+
+// const header = document.querySelector('#sec-heading');
+
+// header.style.color = 'blue';
+// console.log(header);
+
+
+// const listItems = document.querySelectorAll('.list-items');
+
+// for(i = 0; i < listItems.length; i++) {
+//     listItems[i].style.fontSize = '3rem';
+
+// } 
+// console.log(listItems);
+
+
+
+
+// Creating Elements
+const ul = document.querySelector('ul');
+const li = document.createElement('li');
+
+// Adding Elements
+ul.append(li)
+
+// Modifying the text
+
+// const firstListItem = document.querySelector('.list-items');
+
+// console.log(firstListItem.innerText);
+// console.log(firstListItem.textContent);
+// console.log(firstListItem.innerHTML);
+
+li.innerText = 'X-men';
+
+// Modifying Attributes and Classes
+// Using Attributes
+li.setAttribute('id', 'main-heading');
+li.removeAttribute('id');
+
 const heading = document.querySelector('#main-heading');
+console.log(heading.getAttribute('id'));
 
-heading.style.color = 'red';
-console.log(heading);
-
-const header = document.querySelector('#sec-heading');
-
-header.style.color = 'blue';
-console.log(header);
+const title = document.querySelector('#sec-heading');
+console.log(title.getAttribute('id'));
 
 
-const listItems = document.querySelectorAll('.list-items');
+// Using Classes
+li.classList.remove('list-items');
+console.log(li.classList.contains('list-items'));
 
-for(i = 0; i < listItems.length; i++) {
-    listItems[i].style.fontSize = '3rem';
+li.classList.add('list-items');
+console.log(li.classList.contains('list-items'));
 
-} 
-console.log(listItems);
 
+// remove
+li.remove()
 
 

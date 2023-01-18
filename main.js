@@ -47,44 +47,83 @@
 
 
 
-// Creating Elements
-const ul = document.querySelector('ul');
-const li = document.createElement('li');
+// // Creating Elements
+// const ul = document.querySelector('ul');
+// const li = document.createElement('li');
 
-// Adding Elements
-ul.append(li)
+// // Adding Elements
+// ul.append(li)
 
-// Modifying the text
+// // Modifying the text
 
-// const firstListItem = document.querySelector('.list-items');
+// // const firstListItem = document.querySelector('.list-items');
 
-// console.log(firstListItem.innerText);
-// console.log(firstListItem.textContent);
-// console.log(firstListItem.innerHTML);
+// // console.log(firstListItem.innerText);
+// // console.log(firstListItem.textContent);
+// // console.log(firstListItem.innerHTML);
 
-li.innerText = 'X-men';
+// li.innerText = 'X-men';
 
-// Modifying Attributes and Classes
-// Using Attributes
-li.setAttribute('id', 'main-heading');
-li.removeAttribute('id');
+// // Modifying Attributes and Classes
+// // Using Attributes
+// li.setAttribute('id', 'main-heading');
+// li.removeAttribute('id');
 
-const heading = document.querySelector('#main-heading');
-console.log(heading.getAttribute('id'));
+// const heading = document.querySelector('#main-heading');
+// console.log(heading.getAttribute('id'));
 
-const title = document.querySelector('#sec-heading');
-console.log(title.getAttribute('id'));
-
-
-// Using Classes
-li.classList.remove('list-items');
-console.log(li.classList.contains('list-items'));
-
-li.classList.add('list-items');
-console.log(li.classList.contains('list-items'));
+// const title = document.querySelector('#sec-heading');
+// console.log(title.getAttribute('id'));
 
 
-// remove
-li.remove()
+// // Using Classes
+// li.classList.remove('list-items');
+// console.log(li.classList.contains('list-items'));
+
+// li.classList.add('list-items');
+// console.log(li.classList.contains('list-items'));
+
+
+// // remove
+// li.remove()
+
+
+
+
+
+// DOM Manipulation
+
+// Traverse the DOM
+
+// // Parent Node Traversal
+// // const ul = document.querySelector('ul');
+// // console.log(ul.parentNode.parentNode);
+// // console.log(ul.parentElement.parentElement);
+
+// // Difference between parentElement and parentNode
+// const html = document.documentElement;
+// console.log(html.parentElement);
+// console.log(html.parentNode);
+
+// // *parentElement is a type of Node
+
+
+
+// Child Node Traversal
+let ul = document.querySelector('ul');
+console.log(ul.childNodes);
+console.log(ul.firstChild);
+console.log(ul.lastChild);
+ul.childNodes[1].style.backgroundColor = 'blue'
+
+
+
+
+// Sibling Node Traversal
+
+
+
+
+
 
 
